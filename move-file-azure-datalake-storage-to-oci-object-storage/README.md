@@ -69,9 +69,7 @@ El siguiente diagrama ilustra esta arquitectura de referencia:
 La aplicación está construida en base módulos y clases:
 
 <p align="center">
-  <a href="https://github.com/jganggini/oci/blob/main/oci-data-flow/move-file-azure-datalake-storage-to-oci-object-storage/app.py">
     <img src="img/img-102.png" alt="Componentes" width="1000">
-  </a>
 </p>
 
 
