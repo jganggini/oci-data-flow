@@ -10,7 +10,7 @@
   <h3 align="center">OCI Data Flow</h3>
 
   <p align="center">
-    Mover Archivos de Azure Data Lake Storage a OCI Object Storage
+    Migrar Datos de Azure Data Lake Storage a OCI Object Storage
     <br />
     <a href="app.py"><strong>Explore the code »</strong></a>
     <br />
@@ -48,7 +48,7 @@
 <!-- Proyecto -->
 ## Proyecto
 
-El siguiente proyecto cubre la necesidad de mover los datos de alta volumetría en formato parquet ubicados en Azure Data Lake Storage Gen2 a OCI Object Storage para dar continuidad a los proyectos en `OCI Lake House`.
+El siguiente proyecto cubre la necesidad de migrar los datos de alta volumetría en formato parquet ubicados en Azure Data Lake Storage Gen2 a OCI Object Storage para dar continuidad a los proyectos en `OCI Lake House`.
 
 Para ello les comparto el paso a paso de cómo llegar a hacer estas integraciones rápidas en PySpark gracias a los SDK sin necesidad de realizar mapeos o seguimiento de los directorios existentes.
 
@@ -358,6 +358,6 @@ Project Link: [https://github.com/jganggini/oci](https://github.com/jganggini/oc
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://github.com/jganggini/oci/issues
+[issues-url]: https://github.com/jganggini/oci-data-flow/issues
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/jganggini/
