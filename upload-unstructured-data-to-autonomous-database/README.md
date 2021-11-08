@@ -68,7 +68,7 @@ El siguiente diagrama ilustra esta arquitectura de referencia:
 La aplicación está construida en base módulos y clases:
 
 <p align="center">
-  <a href="https://github.com/jganggini/oci/blob/main/oci-data-flow/upload-unstructured-data-to-autonomous-database/app.py">
+  <a href="https://github.com/jganggini/oci-data-flow/blob/main/upload-unstructured-data-to-autonomous-database/app.py">
     <img src="img/img-102.png" alt="Componentes" width="1000">
   </a>
 </p>
