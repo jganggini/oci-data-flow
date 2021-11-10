@@ -64,7 +64,7 @@ El siguiente proyecto cubre la necesidad:
     <li><a href="#contacto">Contacto</a></li>
   </ol>
 
-Para ello les comparto el paso a paso de cómo llegar a hacer estas integraciones rápidas en PySpark gracias a los.
+Para ello les comparto el paso a paso de cómo llegar a hacer estas integraciones rápidas en PySpark.
 
 Otras aplicaciones:
 * Source (`JDBC`)
