@@ -47,13 +47,28 @@
 <!-- Proyecto -->
 ## Proyecto
 
-El siguiente proyecto cubre la necesidad de mover los datos de alta volumetría en formato parquet ubicados en Azure Data Lake Storage Gen2 a OCI Object Storage para dar continuidad a los proyectos en `OCI Lake House`.
+El siguiente proyecto cubre la necesidad:
+<ol>
+    <li>Conectarnos a una API interactuando con Autonomous Database para realizar las consultas a la API enviando una lista de códigos de productos.</li>
+    <li>
+        Listar y preparar los resultados no estructurados en formato JSON enviados por la API.
+        <ul>
+            <li>Subir archivos PNG/JPG de forma recursiva a OCI Object Storage.</li>
+        </ul>
+    </li>
+    <li>Subir un archivo JSON a OCI Object Storage.</li>
+    <li>Subir el archivo publicado en OCI Object Storage a Autonomous Database.</li>
+    <li><a href="#publicar-en-oci-data-flow">Publicar en OCI Data Flow</a></li>
+    <li><a href="#ejecución-en-oci-data-flow">Ejecución en OCI Data Flow</a></li>
+    <li><a href="#referencias">Referencias</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+  </ol>
 
-Para ello les comparto el paso a paso de cómo llegar a hacer estas integraciones rápidas en PySpark gracias a los SDK sin necesidad de realizar mapeos o seguimiento de los directorios existentes.
+Para ello les comparto el paso a paso de cómo llegar a hacer estas integraciones rápidas en PySpark gracias a los.
 
 Otras aplicaciones:
-* Cloud2OCI (`AWS`/`GCP`/`Azure`)
-* OnPremise2OCI (`Cloudera`/`Haddop`)
+* Source (`JDBC`)
+* Target (`Parquet`/`AVRO`)
 
 El siguiente diagrama ilustra esta arquitectura de referencia:
 
@@ -343,10 +358,6 @@ Los SDK y la CLI de Oracle Cloud Infrastructure requieren información de config
     docker run --rm -v ${PWD}:/opt/dataflow -it phx.ocir.io/oracle/dataflow/dependency-packager:latest
     ```
 *   `PowerShell`: Esperamos que termine de generar el zip.
-
-    <p align="center">
-      <img src="img/img-109.gif" width="1000">
-    </p>
 
 *   En el zip `archive.zip` copiamos el directorio `./src` en la ruta `./opt/dataflow/archive.zip/python/lib/python3.6/site-packages/`
 

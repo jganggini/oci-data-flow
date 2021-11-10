@@ -44,6 +44,7 @@ class api_edamam:
                             if(par_oci_obj_ociProfileName =='LOCAL'):
                                 utilities_config.download_object_in_local(value_food, object_name)
 
+                            print('  Upload object (' + object_name + ')...')
                             obj_bytes = urllib3.PoolManager().request('GET', value_food).data
                             oci_object_storage.upload_object(par_oci_obj_bucket_name, object_name, obj_bytes)
 
@@ -80,16 +81,3 @@ class api_edamam:
 
         except Exception as e:
             print(e)
-
-
-
-
-    
-
-    
-
-    
-
-    # Now query the rows back
-
-    
